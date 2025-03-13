@@ -1,0 +1,33 @@
+.dados {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.dados h2 {
+  margin-bottom: 20px;
+}
+
+.dados ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: var(--cor-3)
+}
+
+.dados li {
+  background: var(--cor-1);
+  padding: 24px 18px;
+  border-radius: 4px;
+}
+
+.dados span {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 550px) {
+  .dados ul {
+    grid-template-columns: 1fr;
+  }
+}

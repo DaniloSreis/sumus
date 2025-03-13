@@ -1,0 +1,143 @@
+#login {
+  background: linear-gradient(to right, var(--cor-2) 50%, var(--cor-1) 50%);
+}
+
+#login header {
+  margin-bottom: 20px;
+}
+
+#login nav {
+  padding: 20px 14px;
+  border: none;
+}
+
+#login > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.container-formulario {
+  max-width: 500px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container-formulario h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.usuarios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usuarios input {
+  position: absolute;
+  opacity: 0;
+}
+
+.usuarios label {
+  cursor: pointer;
+  padding: 12px 10px;
+  border-radius: 4px;
+  background: var(--cor-1);
+  color: var(--cor-0);
+  border: 3px solid transparent;
+}
+
+.usuarios label:hover {
+  background: #292929;
+}
+
+.usuarios input:checked + label {
+  color: var(--cor-4);
+  border: 3px solid var(--cor-1);
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: inset 0 0 0 2px var(--cor-0);
+}
+
+.usuarios input:focus + label {
+  box-shadow: inset 0 0 0 2px var(--cor-0);
+}
+
+.container-formulario input:focus {
+  outline-color: var(--cor-1);
+  border: 4px solid var(--cor-0);
+}
+
+.dados-passageiro {
+  display: grid;
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.container-formulario form {
+  display: grid;
+  gap: 16px;
+}
+
+.dados-motorista {
+  display: grid;
+  display: none;
+}
+
+.container-formulario .botao {
+  max-width: 100%;
+  padding: 12px 8px;
+}
+
+.container-formulario p {
+  margin-top: 20px;
+}
+
+.container-formulario a {
+  color: var(--cor-1);
+}
+
+@media (max-width: 900px) {
+  #login {
+    background: var(--cor-2);
+  }
+  #login > div {
+    grid-template-columns: 1fr;
+  }
+  #login .container-formulario {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #login main {
+    gap: 18px;
+  }
+  .usuarios label {
+    padding: 10px 6px;
+    font-size: 1rem;
+  }
+  .container-formulario h1 {
+    font-size: 2.25rem;
+  }
+  .input-formulario {
+    padding: 10px 8px;
+    font-size: 1rem;
+  }
+  .container-formulario a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .usuarios label,
+  .input-formulario {
+    font-size: 1rem;
+  }
+
+  #login .botao {
+    padding: 10px 8px;
+  }
+}

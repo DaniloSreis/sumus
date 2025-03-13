@@ -1,0 +1,15 @@
+@import url("./global/global.css");
+@import url("./global/header.css");
+@import url("./global/footer.css");
+@import url("./home/introducao.css");
+@import url("./home/parceiros.css");
+@import url("./home/perguntas.css");
+@import url("./sobre/sobre.css");
+@import url("./sobre/identidade.css");
+@import url("./sobre/dados.css");
+@import url("./utilitarios/componentes.css");
+@import url("./utilitarios/fontes.css");
+@import url("./utilitarios/cores.css");
+@import url("./login/formulario-login.css");
+@import url("./login/comentarios-login.css");
+@import url("./criar-conta/formulario-criar-conta.css");

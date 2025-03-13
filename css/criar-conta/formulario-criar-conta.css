@@ -1,0 +1,58 @@
+#criar-conta {
+  background: linear-gradient(to right, var(--cor-1) 50%, var(--cor-2) 50%);
+}
+
+#criar-conta header div {
+  display: flex;
+  justify-content: end;
+}
+
+#criar-conta nav {
+  border: none;
+}
+
+#criar-conta > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#criar-conta main {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+@media (max-width: 900px) {
+  #criar-conta header div {
+    justify-content: initial;
+  }
+  #criar-conta {
+    background: var(--cor-2);
+  }
+  #criar-conta header {
+    justify-content: start;
+  }
+  #criar-conta > div {
+    grid-template-columns: 1fr;
+  }
+  #criar-conta main {
+    grid-column: 1;
+  }
+
+  #criar-conta .container-formulario {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #criar-conta main {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  #criar-conta .botao {
+    padding: 10px 8px;
+  }
+}

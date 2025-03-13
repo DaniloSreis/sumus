@@ -1,0 +1,39 @@
+.comentarios {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 50px;
+}
+
+.comentarios h2 {
+  color: var(--cor-0);
+}
+.comentario {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--cor-3);
+}
+
+.comentario .perfil {
+  padding-top: 18px;
+  display: flex;
+  place-items: center;
+  gap: 20px;
+}
+
+.perfil .foto {
+  height: 60px;
+  width: 60px;
+  background: var(--cor-0);
+  border-radius: 50%;
+}
+
+.comentario p {
+  max-width: 60ch;
+}
+
+@media (max-width: 900px) {
+  .comentarios {
+    display: none;
+  }
+}
