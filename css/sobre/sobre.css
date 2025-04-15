@@ -6,6 +6,7 @@
   display: grid;
   justify-items: center;
   padding: 40px 30px;
+  margin-top: 40px;
 }
 
 .sobre h1 {
