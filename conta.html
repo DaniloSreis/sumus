@@ -40,11 +40,94 @@
           </ul>
 
         </div>
-        <a href="./"><img src="./img/logo-branca.svg" alt="home"></a>
+        <a href="./"><img src="./img/logo-branca.svg" alt="home" width="150" height="50"></a>
 
       </nav>
     </div>
   </header>
+  <main class="container">
+    <form class="form-foto" action="" method="" enctype="multipart/form-data">
+      <div class="container-foto">
+        <img src="./img/foto-de-perfil.jpg" width="113" height="150" alt="foto de perfil atual do usuário">
+        <div class="botoes">
+          <input type="file" name="arquivo-foto" id="foto-upload" class="input-file">
+          <label class="botao interactive" for="foto-upload">Selecionar</label>
+          <button type="submit" class="botao interactive" id="foto-salvar">Salvar</button>
+        </div>
+      </div>
+    </form>
+    <form action="" method="" class="form-informacoes">
+      <div class="container-inputs">
+        <div class="primeiro-nome">
+          <label for="primeiro-nome" class="interactive">Primeiro nome</label>
+          <input type="text" name="primeiro-nome" id="primeiro-nome" class="body-text input-formulario">
+        </div>
+        <div class="segundo-nome">
+          <label for="segundo-nome" class="interactive">Segundo nome</label>
+          <input type="text" name="segundo-nome" id="segundo-nome" class="body-text input-formulario">
+        </div>
+        <div class="senha-atual">
+          <label for="senha-atual" class="interactive">Senha atual</label>
+          <input type="text" name="senha-atual" id="senha-atual" class="body-text input-formulario">
+        </div>
+        <div class="nova-senha">
+          <label for="nova-senha" class="interactive">Nova senha</label>
+          <input type="text" name="nova-senha" id="nova-senha" class="body-text input-formulario">
+        </div>
+      </div>
+      <button class="botao interactive">Salvar alterações</button>
+    </form>
+    <form action="" method="" class="form-documento">
+      <div class="select">
+        <div id="select-condition">
+          <label for="options-view-button" class="interactive">Condição</label>
+          <input type="checkbox" id="options-view-button">
+          <div id="select-button" class="input-formulario body-text">
+            <div id="selected-value">Selecionar condição</div>
+            <div id="chevrons">
+              <i data-lucide="chevron-down"></i>
+              <i data-lucide="chevron-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul id="options">
+          <li class="option">
+            <input type="radio" name="condition" value="nehuma" data-label="Nenhuma">
+            <span class="small-text">Nenhuma</span>
+            <i data-lucide="check"></i>
+          </li>
+          <li class="option">
+            <input type="radio" name="condition" value="deficiencia-visual" data-label="Deficiência visual">
+            <span class="small-text">Deficiência visual</span>
+            <i data-lucide="check"></i>
+          </li>
+          <li class="option">
+            <input type="radio" name="condition" value="deficiencia-auditiva" data-label="Deficiência auditiva">
+            <span class="small-text">Deficiência auditiva</span>
+            <i data-lucide="check"></i>
+          </li>
+          <li class="option">
+            <input type="radio" name="condition" value="mobilidade-reduzida" data-label="Mobilidade reduziada">
+            <span class="small-text">Mobilidade reduzida</span>
+            <i data-lucide="check"></i>
+          </li>
+          <li class="option">
+            <input type="radio" name="condition" value="deficiencia-cognitiva" data-label="Deficiência cognitiva">
+            <span class="small-text">Deficiência cognitiva</span>
+            <i data-lucide="check"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="container-input">
+        <input type="file" name="documento" id="documento">
+        <label class="botao interactive" for="documento"><i data-lucide="upload"></i>Carregar documento</label>
+      </div>
+      <button class="botao interactive">Enviar</button>
+    </form>
+  </main>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="./script/lucide-icons/lucide-icons.js"></script>
+  <script src="./script/select/select.js"></script>
 </body>
 
 </html>
