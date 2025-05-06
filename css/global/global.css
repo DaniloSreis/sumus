@@ -12,7 +12,8 @@ a {
 }
 
 a,
-span {
+span,
+label {
   display: inline-block;
 }
 
@@ -23,7 +24,8 @@ p,
 ul,
 dd,
 dl,
-button {
+button,
+input {
   padding: 0;
   margin: 0;
 }
