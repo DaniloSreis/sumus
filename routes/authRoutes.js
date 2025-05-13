@@ -15,7 +15,7 @@ router.post("/login", async (req, res) => {
     const usuario = await User.findOne({ where: { email: email } });
 
     if (!usuario) {
-      return res.status(404).json({ erro: "Usuário não encontrado.", detalhe: "Verifique o email digitado." });
+      return res.status(401).json({ erro: "Usuário não encontrado.", detalhe: "Verifique o email digitado." });
     }
 
     // Verificar tipo de usuário

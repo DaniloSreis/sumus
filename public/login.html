@@ -26,22 +26,20 @@
     <main>
       <div class="container-formulario" aria-label="formulário">
         <h1 class="display">Login</h1>
-        <form action="">
+        <form id="formLogin" action="">
           <div class="usuarios" aria-label="logar como">
-            <input type="radio" name="usuario" id="passageiro" value="passageiro" required>
-            <label class="interactive" for="passageiro">Passageiro</label>
+            <input type="radio" name="tipoUsuarioLogin" id="radioPassageiroLogin" value="passageiro" required checked>
+            <label class="interactive" for="radioPassageiroLogin">Passageiro</label>
 
-            <input type="radio" name="usuario" id="motorista" value="motorista" required>
-            <label class="interactive" for="motorista">Motorista</label>
+            <input type="radio" name="tipoUsuarioLogin" id="radioMotoristaLogin" value="motorista" required>
+            <label class="interactive" for="radioMotoristaLogin">Motorista</label>
           </div>
 
-          <input class="body-text input-formulario" type="text" name="nome" id="nomeUsuario" placeholder="Nome" autocomplete="username" required>
-          <input class="body-text input-formulario" type="email" name="email" id="emailUsuario" placeholder="E-mail" autocomplete="email" required>
-          <input class="body-text input-formulario" type="password" name="senha" id="senhaUsuario" placeholder="Senha" autocomplete="current-password" required>
-          <input class="body-text input-formulario" type="tel" name="telefone" id="telefoneUsuario" placeholder="telefone" autocomplete="tel" required>
-          <button class="botao interactive">Fazer login</button>
+          <input class="body-text input-formulario" type="email" name="email" id="inputEmailLogin" placeholder="E-mail" autocomplete="email" required>
+          <input class="body-text input-formulario" type="password" name="senha" id="inputSenhaLogin" placeholder="Senha" autocomplete="current-password" required>
+          <button type="submit" id="btnLogin" class="botao interactive">Entrar</button>
         </form>
-        <p class="small-text">não tenho uma conta <a class="interactive" href="./criar-conta.html" >cadastre-se aqui</a></p>
+        <p class="small-text">Ainda não tem conta? <a class="interactive" href="./criar-conta.html">Cadastre-se aqui</a></p>
       </div>
     </main>
 
@@ -56,6 +54,7 @@
       </div>
     </section>
   </div>
+  <script src="./script/login.js" defer></script>
 </body>
 
 </html>

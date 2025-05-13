@@ -25,20 +25,20 @@
     <main>
       <div class="container-formulario" aria-label="formulário">
         <h1 class="display">Criar Conta</h1>
-        <form action="">
+        <form id="formCadastro" action="">
           <div class="usuarios" aria-label="logar como">
-            <input type="radio" name="usuario" id="passageiro" value="passageiro" required>
-            <label class="interactive" for="passageiro">Passageiro</label>
+            <input type="radio" name="tipoUsuario" id="radioPassageiro" value="passageiro" required>
+            <label class="interactive" for="radioPassageiro">Passageiro</label>
 
-            <input type="radio" name="usuario" id="motorista" value="motorista" required>
-            <label class="interactive" for="motorista">Motorista</label>
+            <input type="radio" name="tipoUsuario" id="radioMotorista" value="motorista" required>
+            <label class="interactive" for="radioMotorista">Motorista</label>
           </div>
 
-          <input class="body-text input-formulario" type="text" name="nome" id="nomeUsuario" placeholder="Nome" autocomplete="username" required>
-          <input class="body-text input-formulario" type="email" name="email" id="emailUsuario" placeholder="E-mail" autocomplete="email" required>
-          <input class="body-text input-formulario" type="password" name="senha" id="senhaUsuario" placeholder="Senha" autocomplete="current-password" required>
-          <input class="body-text input-formulario" type="tel" name="telefone" id="telefoneUsuario" placeholder="telefone" autocomplete="tel" required>
-          <button class="botao interactive">Criar Conta</button>
+          <input class="body-text input-formulario" type="text" name="nome" id="inputNome" placeholder="Nome" autocomplete="username" required>
+          <input class="body-text input-formulario" type="email" name="email" id="inputEmail" placeholder="E-mail" autocomplete="email" required>
+          <input class="body-text input-formulario" type="password" name="senha" id="inputSenha" placeholder="Senha" autocomplete="current-password" required>
+          <input class="body-text input-formulario" type="tel" name="telefone" id="inputTelefone" placeholder="Telefone" autocomplete="tel" required>
+          <button type="submit" id="btnCriarConta" class="botao interactive">Criar Conta</button>
         </form>
       </div>
     </main>
@@ -54,7 +54,39 @@
       </div>
     </section>
   </div>
+  <script src="./script/criar-conta.js" defer></script>
+  <!--
+  <script defer>
+// Criar usuário
+      const form = document.getElementById('formCadastro');
 
+document.getElementById('btnCriarConta').addEventListener('click', async (e) => {
+  e.preventDefault();
+  
+  const usuario = {
+    tipo: document.querySelector('input[name="tipoUsuario"]:checked').value,
+    nome: document.getElementById('inputNome').value,
+    email: document.getElementById('inputEmail').value,
+    senha: document.getElementById('inputSenha').value,
+    telefone: document.getElementById('inputTelefone').value
+  };
+
+  try {
+    const response = await fetch('http://localhost:3030/api/user', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(usuario)
+    });
+
+    const data = await response.json();
+    if (response.ok) form.reset();
+    
+  } catch (error) {
+    mensagem.textContent = `Erro na conexão: ${error.message}`;
+  }
+});
+
+  </script>
+  -->
 </body>
-
 </html>

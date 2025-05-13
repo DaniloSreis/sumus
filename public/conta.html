@@ -9,7 +9,8 @@
   <script defer src="./script/menu-hamburguer/menu-hamburguer.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="body-bg" id="conta">
@@ -55,7 +56,7 @@
         </div>
       </div>
     </form>
-    <form action="" method="" class="form-informacoes">
+    <form action="" method="" class="form-informacoes" id="formAtualizar">
       <div class="container-inputs">
         <div class="primeiro-nome">
           <label for="primeiro-nome" class="interactive">Primeiro nome</label>
@@ -74,7 +75,7 @@
           <input type="text" name="nova-senha" id="nova-senha" class="body-text input-formulario">
         </div>
       </div>
-      <button class="botao interactive">Salvar alterações</button>
+      <button id="btnAtualizar" class="botao interactive">Salvar alterações</button>
     </form>
     <form action="" method="" class="form-documento">
       <div class="select">
@@ -127,6 +128,38 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="./script/lucide-icons/lucide-icons.js"></script>
   <script src="./script/select/select.js"></script>
+  <script src="./script/conta.js" defer></script>
+<!--  <script  defer>
+      const form = document.getElement.ById('formAtualizar');
+// Atualizar usuário
+document.getElementById('btnAtualizar').addEventListener('click', async (e) => {
+  e.preventDefault();
+  
+  const usuario = {
+    tipo: document.querySelector('input[name="tipoUsuario"]:checked').value,
+    nome: document.getElementById('inputNome').value,
+    email: document.getElementById('inputEmail').value,
+    telefone: document.getElementById('inputTelefone').value
+  };
+
+  try {
+    const response = await fetch(`http://localhost:3030/api/user/${usuario.email}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(usuario)
+    });
+
+    const data = await response.json();
+    if (response.ok) form.reset();
+    
+  } catch (error) {
+    mensagem.textContent = `Erro na conexão: ${error.message}`;
+  }
+});
+
+
+  </script>
+  -->
 </body>
 
 </html>
