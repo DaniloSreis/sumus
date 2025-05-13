@@ -16,18 +16,16 @@ const __dirname = path.dirname(__filename);
 app.use(cors({
     origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'http://127.0.0.1:8080'] 
 }));
+app.use(json());
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
-app.use(json());
 app.use('/api', routes);
+app.use(express.static('public'));
  
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
 
-
-app.use(json());
 
 (async () => {
   try {
