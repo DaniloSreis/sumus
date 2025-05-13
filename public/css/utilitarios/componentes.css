@@ -1,0 +1,38 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  text-transform: uppercase;
+  background: #76d1ff;
+  color: #212121;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  max-width: max-content;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.botao:hover {
+  background: linear-gradient(#76d1ff, #5cc9ff);
+}
+
+.botao:active {
+  border: 2px solid #ffffff;
+}
+
+.input-formulario {
+  background: var(--cor-1);
+  color: var(--cor-0);
+  border: 4px solid transparent;
+  border-radius: 4px;
+  padding: 14px 8px;
+}
+
+.input-formulario::placeholder {
+  color: var(--cor-3);
+}

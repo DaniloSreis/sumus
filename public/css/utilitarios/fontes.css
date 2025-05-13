@@ -1,0 +1,54 @@
+.display {
+  font-family: Arial;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.subtitle-large {
+  font-family: Arial;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+.subtitle-medium {
+  font-family: Arial;
+  font-size: 1.875rem;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+.subtitle-medium-bold {
+  font-family: Arial;
+  font-size: 1.875rem;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.body-text {
+  font-family: Arial;
+  font-size: 1.125rem;
+  line-height: 1.3;/
+}
+
+.highlight {
+  font-family: Arial;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.small-text {
+  font-family: Arial;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+.interactive {
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
