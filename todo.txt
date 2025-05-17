@@ -1,5 +1,0 @@
-[ ]  Adicionar IDs nos htmls
-    [ ] Conta
-    [ ] Criar-conta
-    [ ] Login
-[ ] Anexar o arquivo de script
