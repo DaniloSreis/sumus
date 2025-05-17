@@ -38,8 +38,11 @@ Através da aplicação, queremos conectar usuários que necessitam desse tipo d
 Para obter uma cópia local em funcionamento, siga estes passos de exemplo.
 
 1. _Certifique-se de ter o Git e um Banco de Dados instalado_ em sua máquina.
+
 2. Abra o terminal ou prompt de comando.
+
 3. Navegue até o diretório onde você deseja clonar o projeto.
+
 4. Execute o seguinte comando:
 
 ```bash
@@ -75,6 +78,9 @@ node app.js
 ```
 
 Pronto! Agora você tem um ambiente funcional para desenvolver e testar o projeto!
+
+Basta acessar http://localhost:3030 (ou a porta definida por você no .env) e você 
+será automaticamente redirecionado para a página inicial do aplicativo
 
 
 ## Contribuintes
