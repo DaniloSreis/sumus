@@ -37,7 +37,7 @@ Através da aplicação, queremos conectar usuários que necessitam desse tipo d
 
 Para obter uma cópia local em funcionamento, siga estes passos de exemplo.
 
-1. _Certifique-se de ter o Git instalado_ em sua máquina.
+1. _Certifique-se de ter o Git e um Banco de Dados instalado_ em sua máquina.
 2. Abra o terminal ou prompt de comando.
 3. Navegue até o diretório onde você deseja clonar o projeto.
 4. Execute o seguinte comando:
@@ -45,6 +45,37 @@ Para obter uma cópia local em funcionamento, siga estes passos de exemplo.
 ```bash
 git clone https://github.com/DaniloSreis/sumus.git
 ```
+5. Navegue até o diretório clonado:
+
+```bash
+cd sumus
+```
+
+6. Baixe as dependências utilizando npm
+
+```bash
+npm install
+```
+
+7. Faça uma cópia do arquivo .env.example e o nomeie somente .env
+
+```bash
+cp .env.example .env
+```
+
+8. Acesse seu banco de dados, certifique-se que o mesmo está funcionando e
+_crie uma database vazia_
+
+9. Configure o arquivo .env com as informações necessárias 
+(conforme explicado pelos comentários do .env.example)
+
+10. Execute o arquivo app.js
+```bash
+node app.js
+```
+
+Pronto! Agora você tem um ambiente funcional para desenvolver e testar o projeto!
+
 
 ## Contribuintes
 
